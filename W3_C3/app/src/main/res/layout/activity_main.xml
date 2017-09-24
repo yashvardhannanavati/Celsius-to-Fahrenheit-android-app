@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yashnanavati.w3_c3.MainActivity"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:layout_marginVertical="500dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txtViewCelsius"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="36sp"
+        android:text="@string/celsius" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/seekBarCelsius"
+        android:layout_below="@+id/txtViewCelsius"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="50dp"
+        android:layout_height="50dp"
+        android:max="100" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="match_parent"
+        android:id="@+id/txtViewCelDisp"
+        android:layout_marginTop="16dp"
+        android:layout_height="69dp"
+        android:textSize="36sp"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="@string/fahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtViewFahrenheit"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="36sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="50dp"
+        android:id="@+id/seekBarFahrenheit"
+        android:progress="32"
+        android:max="212" />
+
+    <TextView
+        android:text="32.0"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtViewFahrenDisp"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="36sp" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="celsius">цельсию</string>
+    <string name="fahrenheit">Фаренгейт</string>
+</resources>
